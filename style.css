@@ -1,0 +1,93 @@
+body {
+    background-color: #0B1623;
+    /* Dark Blue background */
+    color: #F4F1DF;
+    /* Light text color */
+    font-family: 'Addington CF', sans-serif;
+    /* Main font */
+}
+
+.ceremony-title {
+    font-family: 'Harry P', sans-serif;
+    /* Harry Potter styled font */
+    font-weight: bold;
+    font-size: 48px;
+    /* Increased title size */
+    margin-bottom: 20px;
+    /* Space below the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Shadow for better visibility */
+}
+
+.loading-message {
+    font-size: 24px;
+    /* Adjust size */
+    font-weight: bold;
+    /* Bold text */
+    color: #F4F1DF;
+    /* Color */
+    margin: 10px 0;
+    /* Space around it */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    /* Shadow for better visibility */
+}
+
+.speech-bubble {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Shadow for depth */
+}
+
+.house-crest {
+    width: auto;
+    /* Adjust width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin: 20px 0;
+    /* Margin around crest */
+    transition: transform 0.5s ease;
+    /* Smooth scaling effect */
+}
+
+.result {
+    font-size: 28px;
+    /* Larger result text */
+    margin-top: 20px;
+    font-weight: bold;
+    /* Make result text bold */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    /* Shadow for better visibility */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
+    z-index: -1;
+    /* Behind content */
+}
+
+button {
+    margin: 10px;
+    /* Space between buttons */
+    border-radius: 25px;
+    /* Rounded buttons */
+    font-size: 18px;
+    /* Button text size */
+    transition: transform 0.2s;
+    /* Button hover effect */
+}
+
+button:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
