@@ -3,29 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hogwarts Sorting Quiz</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sorting Hat Ceremony</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Addington+CF:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Harry+P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hogwarts Sorting Hat Quiz</h1>
-        <p>Choose the trait that resonates with you the most:</p>
-        <button class="option" onclick="sortHouse('Gryffindor')">Daring</button>
-        <button class="option" onclick="sortHouse('Ravenclaw')">Curiosity</button>
-        <button class="option" onclick="sortHouse('Hufflepuff')">Loyalty</button>
-        <button class="option" onclick="sortHouse('Slytherin')">Ambition</button>
-        <div id="result" class="result"></div>
+    <div class="overlay"></div>
+    <div class="container mt-5 text-center">
+        <h1 class="ceremony-title">Sorting Hat Ceremony</h1>
+        <img id="sortingHat" src="assets/images/sorting_hat.jpg" alt="Sorting Hat" class="img-fluid mb-4 animated">
+        <div id="speechBubble" class="speech-bubble d-none">Hmm, let's see... Which house should you be sorted into?</div>
+        <div id="loadingMessage" class="loading-message d-none">Hmm, let's see... Which house should you be sorted into?</div>
+        <div id="result" class="result mb-4"></div>
+        <img id="houseCrest" class="house-crest" src="" alt="House Crest" style="display:none;">
+
+        <div id="choiceButtons" class="mt-4">
+            <button class="btn btn-danger" onclick="sortHouse('Gryffindor')"><i class="fas fa-fire"></i> Daring</button>
+            <button class="btn btn-primary" onclick="sortHouse('Ravenclaw')"><i class="fas fa-owl"></i> Curiosity</button>
+            <button class="btn btn-warning" onclick="sortHouse('Hufflepuff')"><i class="fas fa-leaf"></i> Loyalty</button>
+            <button class="btn btn-success" onclick="sortHouse('Slytherin')"><i class="fas fa-dragon"></i> Ambition</button>
+        </div>
     </div>
+    
+    <audio id="sortingHatSound" src=""></audio>
+    <audio id="houseSound" src=""></audio>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
